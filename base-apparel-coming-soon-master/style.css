@@ -1,0 +1,111 @@
+/* style.css */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  height: 50px;
+}
+
+p {
+  color: pink;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  line-height: 1.1;
+  left: 90px;
+}
+
+h1 span {
+  color: rgb(202, 93, 111);
+  display: block;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start; /* Adjusted to move container to the left */
+  align-items: center;
+  flex-direction: row;
+  padding: 2px; /* Adjust padding for spacing */
+}
+
+.content-container {
+  max-width: 600px;
+  text-align: left;
+}
+
+.girl-image {
+  flex: 1;
+}
+
+.girl-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    justify-content: center; /* Center the container for smaller screens */
+  }
+
+  .logo {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .content-container {
+    text-align: center; /* Center text for smaller screens */
+  }
+}
+@media (max-width: 600px) {
+  .logo {
+    margin-bottom: 10px; /* Adjusted margin for smaller screens */
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+/* style.css */
+
+.email-input {
+  display: flex;
+  align-items: center;
+  margin-top: 15px; /* Adjusted for spacing */
+  padding: 20px;
+}
+
+input[type="email"] {
+  padding: 10px;
+  width: 200px;
+  border: 2px solid #ffb6c1; /* Soft pink border color */
+  border-radius: 20px; /* Adjust the radius to your preference */
+  outline: none; /* Remove default input focus border */
+}
+
+button {
+  background-color: rgb(202, 93, 111);
+  color: white;
+  padding: 10px;
+  border: 2px solid #ffb6c1; /* Soft pink border color */
+  border-radius: 20px; /* Adjust the radius to match the input */
+  cursor: pointer;
+}
+
+/* Add hover effect for the button */
+button:hover {
+  background-color: #a94a64; /* Darker shade for hover effect */
+}
